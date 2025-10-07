@@ -1,0 +1,237 @@
+
+body {
+    background: linear-gradient(145deg, white, lightblue); 
+    font-family: 'Pokemon Solid', sans-serif, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .list-view-container {
+    padding: 20px;
+    text-align: center;
+    background: lightyellow;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar {
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+    border: 2px solid blue;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+  }
+  
+  .sorting-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .sorting-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: darkorange;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .sorting-buttons button:hover {
+    background-color: darkgoldenrod;
+  }
+  
+  .pokemon-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .pokemon-item {
+    margin: 10px 0;
+  }
+  
+  .pokemon-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+  }
+  
+  .pokemon-item a:hover {
+    color: #0056b3;
+  }
+  
+  /* Gallery View */
+  .gallery-view-container {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .type-filter {
+    margin-bottom: 20px;
+  }
+  
+  .type-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .type-checkbox {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .type-checkbox input {
+    margin-right: 5px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .pokemon-item {
+    text-align: center;
+  }
+  
+  .pokemon-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .pokemon-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .pokemon-item p {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: #444;
+  }
+  
+  /* Detail View */
+  .pokemon-detail-container {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .pokemon-detail-container {
+    background-color: lightgoldenrodyellow; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .pokemon-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    color: gold;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: orange;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: black;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  .navigation-buttons {
+    margin-top: 30px;
+  }
+  
+  .navigation-buttons button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #ffcb05;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: goldenrod;
+  }
+  
+  .navigation-buttons button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  .stat-item {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .stat-bar {
+    background-color: lightcoral;
+    border-radius: 4px;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin: 5px 0;
+  }
+  
+  .stat-bar-label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .stat-item span {
+    flex-shrink: 0;
+  }
+  
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
