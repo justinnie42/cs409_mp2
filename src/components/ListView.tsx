@@ -20,7 +20,6 @@ const ListView: React.FC = () => {
         const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=1025');
         const pokemonWithIds = await Promise.all(
           response.data.results.map(async (pokemon: Pokemon) => {
-            const res = await axios.get(pokemon.url);
             const id = parseInt(pokemon.url.split('/')[6]);
             return { ...pokemon, id };
           })
